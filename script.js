@@ -90,27 +90,16 @@
   window.addEventListener("load", updateStripNav);
   window.addEventListener("resize", updateStripNav);
 
-  /* Live project browser windows: tabs, scroll hint, optional live embed */
+  /* Live project browser windows: tabs and scroll hint */
   document.querySelectorAll("[data-browser]").forEach((browser) => {
     const tabs = Array.from(browser.querySelectorAll(".browser-tab"));
     const panes = Array.from(browser.querySelectorAll(".browser-pane"));
     const urlLink = browser.querySelector(".browser-url");
     const urlLabel = urlLink && urlLink.querySelector("span");
     const openLink = browser.querySelector("[data-open]");
-    const embedToggle = browser.querySelector("[data-embed-toggle]");
     if (!tabs.length || !panes.length) return;
 
     const displayUrl = (url) => url.replace(/^https?:\/\//, "").replace(/\/$/, "");
-
-    const syncEmbedToggle = (pane) => {
-      if (!embedToggle) return;
-      const canEmbed = pane.dataset.embed === "true";
-      embedToggle.hidden = !canEmbed;
-      const label = embedToggle.querySelector(".label");
-      const embedded = pane.classList.contains("is-embed");
-      if (label) label.textContent = embedded ? "Show screenshot" : "Live preview";
-      embedToggle.setAttribute("aria-pressed", String(embedded));
-    };
 
     const activate = (index, focus) => {
       tabs.forEach((tab, i) => {
@@ -128,7 +117,6 @@
       if (urlLink) urlLink.href = url;
       if (urlLabel) urlLabel.textContent = displayUrl(url);
       if (openLink) openLink.href = url;
-      syncEmbedToggle(pane);
     };
 
     tabs.forEach((tab, i) => {
@@ -154,32 +142,6 @@
       }
       window.addEventListener("resize", check);
     });
-
-    /* Swap the screenshot for a live iframe where the site permits embedding */
-    if (embedToggle) {
-      embedToggle.addEventListener("click", () => {
-        const pane = panes.find((candidate) => !candidate.hidden);
-        if (!pane || pane.dataset.embed !== "true") return;
-        const scroller = pane.querySelector(".browser-scroll");
-        const image = scroller.querySelector("img");
-        const existing = scroller.querySelector("iframe");
-        if (existing) {
-          existing.remove();
-          if (image) image.hidden = false;
-          pane.classList.remove("is-embed");
-        } else {
-          const frame = document.createElement("iframe");
-          frame.src = pane.dataset.url;
-          frame.title = pane.dataset.title || "Live site preview";
-          frame.loading = "lazy";
-          frame.referrerPolicy = "no-referrer-when-downgrade";
-          if (image) image.hidden = true;
-          scroller.appendChild(frame);
-          pane.classList.add("is-embed");
-        }
-        syncEmbedToggle(pane);
-      });
-    }
 
     activate(0, false);
   });

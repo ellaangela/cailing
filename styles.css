@@ -1246,13 +1246,6 @@ h1 {
   height: auto;
 }
 
-.browser-scroll iframe {
-  display: block;
-  width: 100%;
-  height: 100%;
-  border: 0;
-  background: #fff;
-}
 
 .browser-hint {
   position: absolute;
@@ -1280,7 +1273,6 @@ h1 {
 }
 
 .browser-pane.is-scrolled .browser-hint,
-.browser-pane.is-embed .browser-hint,
 .browser-pane.no-overflow .browser-hint {
   opacity: 0;
 }
