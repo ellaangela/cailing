@@ -3,320 +3,647 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Michaela Angela E. Cailing | Portfolio</title>
-    <meta name="description" content="Portfolio of Michaela Angela E. Cailing, Computer Science student specializing in Machine Learning." />
+    <title>Michaela Angela E. Cailing — Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Michaela Angela E. Cailing — Computer Science student specializing in Machine Learning, with hackathon awards and UI/UX prototyping work."
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Michaela Angela E. Cailing — Portfolio" />
+    <meta
+      property="og:description"
+      content="Computer Science student specializing in Machine Learning. Hackathon champion, UI/UX prototyper, SM Scholar."
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b1220'/%3E%3Ctext x='32' y='45' text-anchor='middle' font-family='Georgia,serif' font-size='38' fill='%23ffffff'%3EM%3C/text%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
   </head>
   <body>
-    <div class="bg-texture" aria-hidden="true"></div>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-    <header class="site-header">
+    <header class="site-header" id="top">
       <div class="container header-inner">
-        <a class="logo" href="#top">Michaela Cailing</a>
-        <nav class="nav">
-          <a href="#about">About</a>
-          <a href="#education">Education</a>
-          <a href="#highlights">Highlights</a>
-          <a href="#uiux">UI/UX</a>
-          <a href="#contact">Contact</a>
+        <a class="brand" href="#top" aria-label="Michaela Cailing — back to top">
+          <span class="brand-mark" aria-hidden="true">M</span>
+          <span class="brand-name">Michaela Cailing</span>
+        </a>
+
+        <nav class="nav" id="nav" aria-label="Primary">
+          <ul class="nav-list">
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#awards">Awards</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <a class="btn btn-primary nav-cta" href="#contact">Get in touch</a>
         </nav>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="nav"
+          aria-label="Open menu"
+        >
+          <svg class="icon icon-menu" viewBox="0 0 24 24" aria-hidden="true">
+            <line x1="3" y1="7" x2="21" y2="7" />
+            <line x1="3" y1="12" x2="21" y2="12" />
+            <line x1="3" y1="17" x2="21" y2="17" />
+          </svg>
+          <svg class="icon icon-close" viewBox="0 0 24 24" aria-hidden="true">
+            <line x1="18" y1="6" x2="6" y2="18" />
+            <line x1="6" y1="6" x2="18" y2="18" />
+          </svg>
+        </button>
       </div>
     </header>
 
-    <main id="top">
-      <section class="hero container">
-        <div class="hero-text">
-          <p class="eyebrow">Computer Science | Machine Learning | SM Scholar</p>
-          <h1>Michaela Angela E. Cailing</h1>
-          <p class="lead">
-            Computer Science student specializing in Machine Learning with experience in hackathons, student initiatives,
-            and UI/UX prototyping. I build wireframes, collaborate across teams, and prototypes.
-          </p>
-          <div class="hero-actions">
-            <a class="btn" href="#contact">Get in touch</a>
-            <a class="btn ghost" href="#uiux">View UI/UX snapshots</a>
+    <main id="main">
+      <!-- Hero -->
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="container hero-container">
+          <div class="hero-inner">
+            <div class="hero-copy">
+              <p class="eyebrow">Computer Science · Machine Learning · SM Scholar</p>
+              <h1 id="hero-title">Michaela Angela E.&nbsp;Cailing</h1>
+              <p class="lede">
+                Computer Science student specializing in Machine Learning, with experience in hackathons, student
+                initiatives, and UI/UX prototyping. I build wireframes and prototypes, and collaborate across teams to
+                turn ideas into testable products.
+              </p>
+              <div class="actions">
+                <a class="btn btn-primary" href="#work">
+                  View selected work
+                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <line x1="5" y1="12" x2="19" y2="12" />
+                    <polyline points="12 5 19 12 12 19" />
+                  </svg>
+                </a>
+                <a class="btn btn-ghost" href="#contact">Get in touch</a>
+              </div>
+              <ul class="social" aria-label="Profiles">
+                <li>
+                  <a href="https://github.com/ellaangela" target="_blank" rel="noreferrer">
+                    <svg class="icon icon-fill" viewBox="0 0 24 24" aria-hidden="true">
+                      <path
+                        d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                      />
+                    </svg>
+                    GitHub
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/michaela-angela-e-cailing-a503332a2/" target="_blank" rel="noreferrer">
+                    <svg class="icon icon-fill" viewBox="0 0 24 24" aria-hidden="true">
+                      <path
+                        d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                      />
+                    </svg>
+                    LinkedIn
+                  </a>
+                </li>
+                <li>
+                  <a href="mailto:cailingme@students.national-u.edu.ph">
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                      <polyline points="22,6 12,13 2,6" />
+                    </svg>
+                    Email
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <figure class="hero-photo">
+              <img
+                src="assets/michaelacailing professional solo photo.jpg"
+                alt="Portrait of Michaela Angela E. Cailing"
+                width="2048"
+                height="3072"
+                fetchpriority="high"
+                decoding="async"
+              />
+            </figure>
+          </div>
+
+          <dl class="hero-facts" aria-label="At a glance">
+            <div>
+              <dt>Education</dt>
+              <dd>BS Computer Science, Machine Learning specialization · National University – Manila · Expected 2026</dd>
+            </div>
+            <div>
+              <dt>Honors</dt>
+              <dd>Consistent First Honor Dean's Lister · SM Scholar</dd>
+            </div>
+            <div>
+              <dt>Hackathons</dt>
+              <dd>4 awards from 2023–2025, including Champion at the UP SoComSci Hackathon 2024</dd>
+            </div>
+            <div>
+              <dt>Based in</dt>
+              <dd>North Caloocan, Philippines</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="section reveal" aria-labelledby="about-title">
+        <div class="container section-grid">
+          <div class="section-head">
+            <p class="section-index">01 · Profile</p>
+            <h2 id="about-title">About</h2>
+            <p class="section-lede">Focused on ML-driven product thinking, transparent tech, and accessible experiences.</p>
+          </div>
+          <div class="section-body">
+            <div class="prose">
+              <p>
+                I enjoy building user-friendly systems. My work blends prototyping, strong research habits to ensure
+                quality, and clear visual communication.
+              </p>
+              <p>
+                I collaborate with cross-functional teams to deliver prototypes that are testable, measurable, and
+                aligned with real community needs.
+              </p>
+            </div>
+            <dl class="facts">
+              <div>
+                <dt>Location</dt>
+                <dd>North Caloocan, Philippines</dd>
+              </div>
+              <div>
+                <dt>Focus</dt>
+                <dd>Machine Learning, Product Prototyping</dd>
+              </div>
+              <div>
+                <dt>Tools</dt>
+                <dd>Figma, Photoshop, Trello, Visual Studio Code, Canva, GitHub, Microsoft Office</dd>
+              </div>
+              <div>
+                <dt>Strengths</dt>
+                <dd>Organization, Detail, Coordination, Ensuring Quality</dd>
+              </div>
+            </dl>
           </div>
         </div>
       </section>
 
-      <section id="about" class="section container reveal">
-        <div class="section-head">
-          <h2>About</h2>
-          <p>Focused on ML-driven product thinking, transparent tech, and accessible experiences.</p>
+      <!-- Education -->
+      <section id="education" class="section section--alt reveal" aria-labelledby="education-title">
+        <div class="container section-grid">
+          <div class="section-head">
+            <p class="section-index">02 · Academics</p>
+            <h2 id="education-title">Education</h2>
+            <p class="section-lede">Academic focus and performance.</p>
+          </div>
+          <div class="section-body">
+            <article class="card">
+              <div class="card-top">
+                <h3>National University – Manila</h3>
+                <span class="meta">Expected graduation 2026</span>
+              </div>
+              <p class="card-sub">Bachelor of Science in Computer Science · Specialization in Machine Learning</p>
+              <ul class="pills">
+                <li class="pill pill--gold">Consistent First Honor Dean's Lister</li>
+                <li class="pill pill--accent">SM Scholar</li>
+              </ul>
+            </article>
+          </div>
         </div>
-        <div class="two-col">
-          <p>
-            I enjoy building user friendly systems. My work blends prototyping, strong
-            research habits to ensure quality, and clear visual communication. I do collaborate with cross-functional teams to deliver
-            prototypes that are testable, measurable, and aligned with real community needs.
-          </p>
-          <ul class="quick-facts">
-            <li>Location: North Caloocan, Philippines</li>
-            <li>Focus: Machine Learning, Product Prototyping</li>
-            <li>Tools: Figma, Photoshop, Trello, Visual Studio Code, Canva, GitHub, Microsoft Office</li>
-            <li>Strengths: Organization, Detail, Coordination, Ensuring Quality</li>
+      </section>
+
+      <!-- Hackathons & awards -->
+      <section id="awards" class="section reveal" aria-labelledby="awards-title">
+        <div class="container section-grid">
+          <div class="section-head">
+            <p class="section-index">03 · Recognition</p>
+            <h2 id="awards-title">Hackathons &amp; awards</h2>
+            <p class="section-lede">Selected achievements and the MVPs behind them.</p>
+          </div>
+          <ul class="section-body awards">
+            <li class="card award">
+              <div class="card-top">
+                <span class="pill pill--gold">Champion</span>
+                <span class="meta">November 2024</span>
+              </div>
+              <h3>UP SoComSci Hackathon 2024</h3>
+              <ul class="bullets">
+                <li>Built Blogbite, a blockchain-based social media mobile app.</li>
+                <li>Designed a Figma prototype for restaurant listings and reviews.</li>
+                <li>Proposed a decentralized system for credible reputation sharing.</li>
+              </ul>
+            </li>
+            <li class="card award">
+              <div class="card-top">
+                <span class="pill pill--accent">Best Entry · Government Transparency</span>
+                <span class="meta">January 2025</span>
+              </div>
+              <h3>InnOlympics (GDSC PLM) 2025</h3>
+              <ul class="bullets">
+                <li>Developed the TalaBatas MVP for ordinance tracking.</li>
+                <li>Designed for transparency and public access to legislative records.</li>
+                <li>Presented at the ING Hubs Philippines hackathon.</li>
+              </ul>
+            </li>
+            <li class="card award">
+              <div class="card-top">
+                <span class="pill pill--accent">1st Runner-Up</span>
+                <span class="meta">May 2024</span>
+              </div>
+              <h3>Google Solution Challenge Ideathon</h3>
+              <ul class="bullets">
+                <li>Aligned the solution to SDG 3, 9, and 17.</li>
+                <li>Built a functional Figma prototype.</li>
+                <li>Presented scalable innovation for public health and infrastructure.</li>
+              </ul>
+            </li>
+            <li class="card award">
+              <div class="card-top">
+                <span class="pill pill--accent">Top 8 Finalist</span>
+                <span class="meta">October 2023</span>
+              </div>
+              <h3>DLSU Hackercup 2023</h3>
+              <ul class="bullets">
+                <li>Proposed a solution aligned with SDG 5 and 9.</li>
+                <li>Designed the For Every Juanas prototype in Figma.</li>
+              </ul>
+            </li>
           </ul>
         </div>
       </section>
 
-      <section id="education" class="section container reveal">
-        <div class="section-head">
-          <h2>Education</h2>
-          <p>Academic focus and performance.</p>
-        </div>
-        <div class="card">
-          <h3>National University - Manila</h3>
-          <p>Bachelor of Science in Computer Science, specialization in Machine Learning</p>
-          <p class="muted">Expected Graduation: 2026 | Consistent First Honor Dean's Lister</p>
-        </div>
-      </section>
+      <!-- Experience & leadership -->
+      <section id="experience" class="section section--alt reveal" aria-labelledby="experience-title">
+        <div class="container section-grid">
+          <div class="section-head">
+            <p class="section-index">04 · Background</p>
+            <h2 id="experience-title">Experience &amp; leadership</h2>
+            <p class="section-lede">Creative and marketing roles, plus community, events, and operations work.</p>
+          </div>
+          <div class="section-body">
+            <ol class="timeline">
+              <li>
+                <span class="tl-when">2022</span>
+                <div class="tl-body">
+                  <h3>Creative Director</h3>
+                  <p class="card-sub">National Housing Corporation High School · Work immersion program</p>
+                  <ul class="bullets">
+                    <li>Oversaw creative initiatives during the work immersion program.</li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <span class="tl-when">2021</span>
+                <div class="tl-body">
+                  <h3>Marketing Manager</h3>
+                  <p class="card-sub">National Housing Corporation High School</p>
+                  <ul class="bullets">
+                    <li>Developed advertising strategies and promotional materials.</li>
+                    <li>Managed and maintained the Facebook page.</li>
+                    <li>Designed and published announcement posters.</li>
+                  </ul>
+                </div>
+              </li>
+            </ol>
 
-      <section id="highlights" class="section container reveal">
-        <div class="section-head">
-          <h2>Hackathons and Awards</h2>
-          <p>Selected achievements and MVPs.</p>
-        </div>
-        <div class="grid">
-          <article class="card">
-            <h3>UP SoComSci Hackathon 2024</h3>
-            <p class="muted">November 2024 | Champion</p>
-            <ul>
-              <li>Built Blogbite, a blockchain-based social media mobile app.</li>
-              <li>Designed a Figma prototype for restaurant listings and reviews.</li>
-              <li>Proposed a decentralized system for credible reputation sharing.</li>
-            </ul>
-          </article>
-          <article class="card">
-            <h3>InnOlympics (GDSC PLM) 2025</h3>
-            <p class="muted">January 2025 | Special Award: Best Entry for Government Transparency</p>
-            <ul>
-              <li>Developed TalaBatas MVP for ordinance tracking.</li>
-              <li>Designed for transparency and public access to legislative records.</li>
-              <li>Presented at ING Hubs Philippines hackathon.</li>
-            </ul>
-          </article>
-          <article class="card">
-            <h3>Google Solution Challenge Ideathon</h3>
-            <p class="muted">May 2024 | 1st Runner-Up</p>
-            <ul>
-              <li>Aligned solution to SDG 3, 9, and 17.</li>
-              <li>Built a functional Figma prototype.</li>
-              <li>Presented scalable innovation for public health and infrastructure.</li>
-            </ul>
-          </article>
-          <article class="card">
-            <h3>DLSU Hackercup 2023</h3>
-            <p class="muted">October 2023 | Top 8 Finalist</p>
-            <ul>
-              <li>Proposed a solution aligned with SDG 5 and 9.</li>
-              <li>Designed a prototype using Figma.</li>
-            </ul>
-          </article>
-        </div>
-      </section>
-
-      <section id="leadership" class="section container reveal">
-        <div class="section-head">
-          <h2>Leadership and Organizations</h2>
-          <p>Community, events, and operations.</p>
-        </div>
-        <div class="grid">
-          <div class="card">
-            <h3>Google Developer Student Clubs (GDSC) NU Manila</h3>
-            <p class="muted">• Operations Committee Member | 2024-2025</p>
-            <p class="muted">• Member | 2023-2024</p>
-            <p>Assisted in organizing technical events and community-driven initiatives.</p>
-          </div>
-          <div class="card">
-            <h3>Junior Philippine Computer Society (JPCS)</h3>
-            <p class="muted">• Member | 2023-2024</p>
-          </div>
-          <div class="card">
-            <h3>CCIT Operations Committee</h3>
-            <p class="muted">• Committee Member | 2024</p>
-          </div>
-          <div class="card">
-            <h3>AWS Legarda</h3>
-            <p class="muted">• Member | 2024-2025</p>
-          </div>
-          <div class="card">
-            <h3>Computer Science Society</h3>
-            <p class="muted">• Member | 2024-2025</p>
-          </div>
-        </div>
-      </section>
-
-      <section id="experience" class="section container reveal">
-        <div class="section-head">
-          <h2>Experience</h2>
-          <p>Creative leadership and marketing roles.</p>
-        </div>
-        <div class="grid">
-          <div class="card">
-            <h3>Creative Director</h3>
-            <p class="muted">National Housing Corporation High School | 2022</p>
-            <ul>
-              <li>Oversaw creative initiatives during work immersion program.</li>
-            </ul>
-          </div>
-          <div class="card">
-            <h3>Marketing Manager</h3>
-            <p class="muted">National Housing Corporation High School | 2021</p>
-            <ul>
-              <li>Developed advertising strategies and promotional materials.</li>
-              <li>Managed and maintained Facebook page.</li>
-              <li>Designed and published announcement posters.</li>
+            <h3 class="subhead">Organizations</h3>
+            <ul class="org-list">
+              <li>
+                <span class="org-name">Google Developer Student Clubs (GDSC) NU Manila</span>
+                <span class="org-role">Operations Committee Member · previously Member</span>
+                <span class="org-years">2023 – 2025</span>
+                <span class="org-note">Assisted in organizing technical events and community-driven initiatives.</span>
+              </li>
+              <li>
+                <span class="org-name">AWS Legarda</span>
+                <span class="org-role">Member</span>
+                <span class="org-years">2024 – 2025</span>
+              </li>
+              <li>
+                <span class="org-name">Computer Science Society</span>
+                <span class="org-role">Member</span>
+                <span class="org-years">2024 – 2025</span>
+              </li>
+              <li>
+                <span class="org-name">CCIT Operations Committee</span>
+                <span class="org-role">Committee Member</span>
+                <span class="org-years">2024</span>
+              </li>
+              <li>
+                <span class="org-name">Junior Philippine Computer Society (JPCS)</span>
+                <span class="org-role">Member</span>
+                <span class="org-years">2023 – 2024</span>
+              </li>
             </ul>
           </div>
         </div>
       </section>
 
-      <section id="skills" class="section container reveal">
-        <div class="section-head">
-          <h2>Technical and Professional Skills</h2>
-          <p>Tools and strengths used to build MVPs.</p>
-        </div>
-        <div class="tags">
-          <span>Figma (UI/UX prototyping)</span>
-          <span>Adobe Photoshop</span>
-          <span>Trello</span>
-          <span>Visual Studio Code</span>
-          <span>Canva</span>
-          <span>Machine Learning</span>
-          <span>Solution design</span>
-          <span>Event operations</span>
-          <span>Social media management</span>
-          <span>Quality Assurance</span>
-          <span>Attention to detail</span>
-          <span>Organizational skills</span>
-          <span>Analytical skills</span>
-        </div>
-      </section>
-
-      <section id="uiux" class="section container reveal">
-        <div class="section-head">
-          <h2>UI/UX Snapshots</h2>
-          <p>Showcasing selected UI/UX designs from various projects.</p>
-        </div>
-        <style>
-          .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 2rem;
-            justify-content: flex-start;
-          }
-          .snapshot-group {
-            flex: 1 1 420px;
-            min-width: 320px;
-            max-width: 520px;
-            margin-bottom: 2.5rem;
-          }
-          .snapshot-group h3 {
-            margin-bottom: 0.5rem;
-            font-size: 1.1rem;
-            text-align: center;
-          }
-          .snapshot-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-            gap: 1.2rem;
-          }
-          .snapshot-list.one-col {
-            grid-template-columns: 1fr;
-          }
-          .snapshot {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: #fafbfc;
-            border-radius: 10px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-            padding: 0.5rem;
-            min-height: 180px;
-            height: 100%;
-          }
-          .snapshot img {
-            max-width: 100%;
-            max-height: 340px;
-            width: auto;
-            height: auto;
-            object-fit: contain;
-            border-radius: 6px;
-            box-shadow: 0 1px 4px rgba(0,0,0,0.07);
-            background: #fff;
-          }
-        </style>
-        <div class="gallery">
-          <div class="snapshot-group">
-            <h3>DiabetEase</h3>
-            <div class="snapshot-list">
-              <div class="snapshot"><img src="assets/DiabetEase/Welcome Page.png" alt="DiabetEase Welcome Page" /></div>
-              <div class="snapshot"><img src="assets/DiabetEase/Glucose.png" alt="DiabetEase Glucose" /></div>
-              <div class="snapshot"><img src="assets/DiabetEase/Glucose-1.png" alt="DiabetEase Glucose-1" /></div>
-              <div class="snapshot"><img src="assets/DiabetEase/Glucose History.png" alt="DiabetEase Glucose History" /></div>
-              <div class="snapshot"><img src="assets/DiabetEase/Recipee.png" alt="DiabetEase Recipee" /></div>
+      <!-- Skills -->
+      <section id="skills" class="section reveal" aria-labelledby="skills-title">
+        <div class="container section-grid">
+          <div class="section-head">
+            <p class="section-index">05 · Toolkit</p>
+            <h2 id="skills-title">Skills</h2>
+            <p class="section-lede">Tools and strengths used to build MVPs.</p>
+          </div>
+          <div class="section-body skill-groups">
+            <div class="skill-group">
+              <h3>Design &amp; prototyping</h3>
+              <ul class="chips">
+                <li>Figma (UI/UX prototyping)</li>
+                <li>Adobe Photoshop</li>
+                <li>Canva</li>
+              </ul>
             </div>
-          </div>
-          <div class="snapshot-group">
-            <h3>For Every Juanas (DLSU 2023 Hackercup)</h3>
-            <div class="snapshot-list one-col">
-              <div class="snapshot"><img src="assets/For Every Juanas (DLSU 2023 Hackercup)/Screenshot_1.png" alt="For Every Juanas Screenshot 1" /></div>
-              <div class="snapshot"><img src="assets/For Every Juanas (DLSU 2023 Hackercup)/Screenshot_4.png" alt="For Every Juanas Screenshot 4" /></div>
-              <div class="snapshot"><img src="assets/For Every Juanas (DLSU 2023 Hackercup)/Screenshot_5.png" alt="For Every Juanas Screenshot 5" /></div>
+            <div class="skill-group">
+              <h3>Development</h3>
+              <ul class="chips">
+                <li>Machine Learning</li>
+                <li>Solution design</li>
+                <li>Visual Studio Code</li>
+                <li>GitHub</li>
+              </ul>
             </div>
-          </div>
-          <div class="snapshot-group">
-            <h3>NU ReHub</h3>
-            <div class="snapshot-list one-col">
-              <div class="snapshot"><img src="assets/NU ReHub/Home.png" alt="NU ReHub Home" /></div>
-              <div class="snapshot"><img src="assets/NU ReHub/Home-1.png" alt="NU ReHub Home-1" /></div>
-              <div class="snapshot"><img src="assets/NU ReHub/Log in.png" alt="NU ReHub Log in" /></div>
-              <div class="snapshot"><img src="assets/NU ReHub/Register.png" alt="NU ReHub Register" /></div>
+            <div class="skill-group">
+              <h3>Collaboration &amp; operations</h3>
+              <ul class="chips">
+                <li>Trello</li>
+                <li>Microsoft Office</li>
+                <li>Event operations</li>
+                <li>Social media management</li>
+              </ul>
             </div>
-          </div>
-          <div class="snapshot-group">
-            <h3>Smart Home System</h3>
-            <div class="snapshot-list">
-              <div class="snapshot"><img src="assets/Smart Home System/Home.png" alt="Smart Home System Home" /></div>
-              <div class="snapshot"><img src="assets/Smart Home System/Room Sample.png" alt="Smart Home System Room Sample" /></div>
-              <div class="snapshot"><img src="assets/Smart Home System/Energy1.png" alt="Smart Home System Energy1" /></div>
-              <div class="snapshot"><img src="assets/Smart Home System/Security2.png" alt="Smart Home System Security2" /></div>
-              <div class="snapshot"><img src="assets/Smart Home System/Voice Over.png" alt="Smart Home System Voice Over" /></div>
+            <div class="skill-group">
+              <h3>Professional strengths</h3>
+              <ul class="chips">
+                <li>Quality assurance</li>
+                <li>Attention to detail</li>
+                <li>Organizational skills</li>
+                <li>Analytical skills</li>
+                <li>Coordination</li>
+              </ul>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="contact" class="section container reveal">
-        <div class="section-head">
-          <h2>Contact</h2>
-          <p>Let us build something useful.</p>
+      <!-- Selected work -->
+      <section id="work" class="section section--alt reveal" aria-labelledby="work-title">
+        <div class="container">
+          <div class="section-head section-head--wide">
+            <p class="section-index">06 · Selected work</p>
+            <h2 id="work-title">UI/UX snapshots</h2>
+            <p class="section-lede">
+              Screens from prototypes designed in Figma across health, careers, campus research, and smart-home
+              concepts. Select any screen to enlarge it.
+            </p>
+          </div>
+
+          <div class="projects">
+            <article class="project" aria-labelledby="project-diabetease">
+              <div class="project-head">
+                <div class="project-info">
+                  <div class="project-title-row">
+                    <h3 id="project-diabetease">DiabetEase</h3>
+                    <span class="pill">Mobile · Health</span>
+                  </div>
+                  <p class="project-desc">
+                    A diabetes-management app concept for logging daily blood glucose, tracking weekly trends and
+                    averages, reviewing history, and browsing diabetic-friendly recipes.
+                  </p>
+                </div>
+                <div class="strip-nav">
+                  <button type="button" class="strip-btn" data-dir="-1" aria-label="Scroll DiabetEase screens left">
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><polyline points="15 18 9 12 15 6" /></svg>
+                  </button>
+                  <button type="button" class="strip-btn" data-dir="1" aria-label="Scroll DiabetEase screens right">
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9 18 15 12 9 6" /></svg>
+                  </button>
+                </div>
+              </div>
+              <div class="shots">
+                <button type="button" class="shot" data-caption="DiabetEase — Welcome">
+                  <img src="assets/DiabetEase/Welcome Page.png" alt="DiabetEase welcome screen" width="237" height="512" loading="lazy" />
+                </button>
+                <button type="button" class="shot" data-caption="DiabetEase — Track glucose">
+                  <img src="assets/DiabetEase/Glucose.png" alt="DiabetEase glucose tracking screen with weekly chart and daily stats" width="237" height="512" loading="lazy" />
+                </button>
+                <button type="button" class="shot" data-caption="DiabetEase — Glucose detail">
+                  <img src="assets/DiabetEase/Glucose-1.png" alt="DiabetEase glucose detail screen" width="237" height="512" loading="lazy" />
+                </button>
+                <button type="button" class="shot" data-caption="DiabetEase — Glucose history">
+                  <img src="assets/DiabetEase/Glucose History.png" alt="DiabetEase glucose history screen" width="237" height="512" loading="lazy" />
+                </button>
+                <button type="button" class="shot" data-caption="DiabetEase — Recipes">
+                  <img src="assets/DiabetEase/Recipee.png" alt="DiabetEase recipes screen" width="237" height="512" loading="lazy" />
+                </button>
+              </div>
+            </article>
+
+            <article class="project" aria-labelledby="project-juanas">
+              <div class="project-head">
+                <div class="project-info">
+                  <div class="project-title-row">
+                    <h3 id="project-juanas">For Every Juanas</h3>
+                    <span class="pill">Mobile · DLSU Hackercup 2023</span>
+                  </div>
+                  <p class="project-desc">
+                    A job-discovery platform designed to empower Filipino women in tech: searchable listings, detailed
+                    job pages, and one-tap apply and save. A Top 8 finalist entry aligned with SDG 5 and 9.
+                  </p>
+                </div>
+                <div class="strip-nav">
+                  <button type="button" class="strip-btn" data-dir="-1" aria-label="Scroll For Every Juanas screens left">
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><polyline points="15 18 9 12 15 6" /></svg>
+                  </button>
+                  <button type="button" class="strip-btn" data-dir="1" aria-label="Scroll For Every Juanas screens right">
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9 18 15 12 9 6" /></svg>
+                  </button>
+                </div>
+              </div>
+              <div class="shots">
+                <button type="button" class="shot" data-caption="For Every Juanas — Onboarding">
+                  <img src="assets/For Every Juanas (DLSU 2023 Hackercup)/Screenshot_1.png" alt="For Every Juanas onboarding screens" width="844" height="789" loading="lazy" />
+                </button>
+                <button type="button" class="shot" data-caption="For Every Juanas — Job listings and job detail">
+                  <img src="assets/For Every Juanas (DLSU 2023 Hackercup)/Screenshot_4.png" alt="For Every Juanas job listings screen and a Data Engineer job detail screen" width="822" height="801" loading="lazy" />
+                </button>
+                <button type="button" class="shot" data-caption="For Every Juanas — Community">
+                  <img src="assets/For Every Juanas (DLSU 2023 Hackercup)/Screenshot_5.png" alt="For Every Juanas community and profile screens" width="1246" height="748" loading="lazy" />
+                </button>
+              </div>
+            </article>
+
+            <article class="project" aria-labelledby="project-rehub">
+              <div class="project-head">
+                <div class="project-info">
+                  <div class="project-title-row">
+                    <h3 id="project-rehub">NU ReHub</h3>
+                    <span class="pill">Web · Campus research</span>
+                  </div>
+                  <p class="project-desc">
+                    A campus research hub concept: search and browse academic papers, save favorites, and follow
+                    trending topics across the community.
+                  </p>
+                </div>
+                <div class="strip-nav">
+                  <button type="button" class="strip-btn" data-dir="-1" aria-label="Scroll NU ReHub screens left">
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><polyline points="15 18 9 12 15 6" /></svg>
+                  </button>
+                  <button type="button" class="strip-btn" data-dir="1" aria-label="Scroll NU ReHub screens right">
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9 18 15 12 9 6" /></svg>
+                  </button>
+                </div>
+              </div>
+              <div class="shots">
+                <button type="button" class="shot" data-caption="NU ReHub — Home">
+                  <img src="assets/NU ReHub/Home.png" alt="NU ReHub home page with latest reads and trending topics" width="720" height="512" loading="lazy" />
+                </button>
+                <button type="button" class="shot" data-caption="NU ReHub — Home (alternate)">
+                  <img src="assets/NU ReHub/Home-1.png" alt="NU ReHub home page, alternate view" width="720" height="512" loading="lazy" />
+                </button>
+                <button type="button" class="shot" data-caption="NU ReHub — Log in">
+                  <img src="assets/NU ReHub/Log in.png" alt="NU ReHub log in page" width="720" height="512" loading="lazy" />
+                </button>
+                <button type="button" class="shot" data-caption="NU ReHub — Register">
+                  <img src="assets/NU ReHub/Register.png" alt="NU ReHub registration page" width="720" height="512" loading="lazy" />
+                </button>
+              </div>
+            </article>
+
+            <article class="project" aria-labelledby="project-smarthome">
+              <div class="project-head">
+                <div class="project-info">
+                  <div class="project-title-row">
+                    <h3 id="project-smarthome">Smart Home System</h3>
+                    <span class="pill">Mobile · IoT</span>
+                  </div>
+                  <p class="project-desc">
+                    A smart-home control concept with room-by-room device controls, live energy-usage tracking,
+                    security camera views, and a voice assistant.
+                  </p>
+                </div>
+                <div class="strip-nav">
+                  <button type="button" class="strip-btn" data-dir="-1" aria-label="Scroll Smart Home System screens left">
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><polyline points="15 18 9 12 15 6" /></svg>
+                  </button>
+                  <button type="button" class="strip-btn" data-dir="1" aria-label="Scroll Smart Home System screens right">
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9 18 15 12 9 6" /></svg>
+                  </button>
+                </div>
+              </div>
+              <div class="shots">
+                <button type="button" class="shot" data-caption="Smart Home System — Home">
+                  <img src="assets/Smart Home System/Home.png" alt="Smart Home System home screen with energy usage and rooms" width="237" height="512" loading="lazy" />
+                </button>
+                <button type="button" class="shot" data-caption="Smart Home System — Room controls">
+                  <img src="assets/Smart Home System/Room Sample.png" alt="Smart Home System room controls screen" width="237" height="512" loading="lazy" />
+                </button>
+                <button type="button" class="shot" data-caption="Smart Home System — Energy">
+                  <img src="assets/Smart Home System/Energy1.png" alt="Smart Home System energy usage screen" width="237" height="512" loading="lazy" />
+                </button>
+                <button type="button" class="shot" data-caption="Smart Home System — Security">
+                  <img src="assets/Smart Home System/Security2.png" alt="Smart Home System security camera screen" width="237" height="512" loading="lazy" />
+                </button>
+                <button type="button" class="shot" data-caption="Smart Home System — Voice assistant">
+                  <img src="assets/Smart Home System/Voice Over.png" alt="Smart Home System voice assistant screen" width="237" height="512" loading="lazy" />
+                </button>
+              </div>
+            </article>
+          </div>
         </div>
-        <div class="contact-card">
-          <div>
-            <p class="contact-name">Michaela Angela E. Cailing</p>
-            <p class="muted">Computer Science student, Machine Learning</p>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="section section--dark reveal" aria-labelledby="contact-title">
+        <div class="container contact-inner">
+          <div class="section-head">
+            <p class="section-index">07 · Contact</p>
+            <h2 id="contact-title">Let's build something useful.</h2>
+            <p class="section-lede">
+              Happy to talk about projects, collaborations, or opportunities. Email is the fastest way to reach me.
+            </p>
           </div>
-          <div class="contact-links">
-            <a href="mailto:cailingme@students.national-u.edu.ph">cailingme@students.national-u.edu.ph</a>
-            <a href="https://github.com/ellaangela" target="_blank" rel="noreferrer">github.com/ellaangela</a>
-            <a href="https://www.linkedin.com/in/michaela-angela-e-cailing-a503332a2/" target="_blank" rel="noreferrer">LinkedIn profile</a>
-          </div>
+          <ul class="contact-links">
+            <li>
+              <a class="contact-card" href="mailto:cailingme@students.national-u.edu.ph">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+                <span class="contact-label">Email</span>
+                <span class="contact-value">cailingme@students.national-u.edu.ph</span>
+              </a>
+            </li>
+            <li>
+              <a class="contact-card" href="https://github.com/ellaangela" target="_blank" rel="noreferrer">
+                <svg class="icon icon-fill" viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                  />
+                </svg>
+                <span class="contact-label">GitHub</span>
+                <span class="contact-value">github.com/ellaangela</span>
+              </a>
+            </li>
+            <li>
+              <a class="contact-card" href="https://www.linkedin.com/in/michaela-angela-e-cailing-a503332a2/" target="_blank" rel="noreferrer">
+                <svg class="icon icon-fill" viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                  />
+                </svg>
+                <span class="contact-label">LinkedIn</span>
+                <span class="contact-value">Michaela Angela E. Cailing</span>
+              </a>
+            </li>
+          </ul>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
       <div class="container footer-inner">
-        <p>Michaela Angela E. Cailing | 2026.</p>
+        <p>© <span id="year">2026</span> Michaela Angela E. Cailing</p>
+        <a class="to-top" href="#top">
+          Back to top
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+            <line x1="12" y1="19" x2="12" y2="5" />
+            <polyline points="5 12 12 5 19 12" />
+          </svg>
+        </a>
       </div>
     </footer>
+
+    <dialog class="lightbox" id="lightbox" aria-label="Image preview">
+      <button type="button" class="lightbox-close" aria-label="Close preview">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
+      </button>
+      <figure>
+        <img alt="" />
+        <figcaption></figcaption>
+      </figure>
+    </dialog>
 
     <script src="script.js"></script>
   </body>
 </html>
-
-
-
-
-
